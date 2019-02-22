@@ -4,12 +4,15 @@
   "description": "A chat demo for holochain",
   "main": "index.js",
   "scripts": {
-    "hc:build-mac": "mkdir -p dna && cd dna-src && ../mac/hc package --strip-meta -o ../dna/holo-chat.hcpkg",
-    "hc:start-mac": "../mac/holochain -c ./conductor-config.toml",
-    "hc:build-linux": "mkdir -p dna && cd dna-src && ../linux/hc package --strip-meta -o ../dna/holo-chat.hcpkg",
-    "hc:start-linux": "../linux/holochain -c ./conductor-config.toml",
-    "hc:build-win": "mkdir -p dna && cd dna-src && ../win/hc package --strip-meta -o ../dna/holo-chat.hcpkg",
-    "hc:start-win": "../win/holochain -c ./conductor-config.toml"
+    "hc:build-mac": "mkdir -p dna && cd dna-src && ../../mac/hc package --strip-meta -o ../dna/holo-chat.dna.json",
+    "hc:start-mac": "mkdir -p tmp-storage && ../mac/holochain -c ./conductor-config.toml",
+    "hc:test-mac": "cd dna-src && ../../mac/hc test",
+    "hc:build-linux": "mkdir -p dna && cd dna-src && ../../linux/hc package --strip-meta -o ../dna/holo-chat.dna.json",
+    "hc:start-linux": "mkdir -p tmp-storage && ../linux/holochain -c ./conductor-config.toml",
+    "hc:test-linux": "cd dna-src && ../../linux/hc test",
+    "hc:build-win": "mkdir -p dna && cd dna-src && ../../win/hc package --strip-meta -o ../dna/holo-chat.dna.json",
+    "hc:start-win": "mkdir -p tmp-storage && ../win/holochain -c ./conductor-config.toml",
+    "hc:test-win": "cd dna-src && ../../win/hc test"
     },
   "author": "",
   "license": "GPL-3"

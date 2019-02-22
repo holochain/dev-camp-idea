@@ -25,7 +25,7 @@ key_file = "holo_tester.key"
 
 [[dnas]]
 id = "chat_dna"
-file = "dna/holo-chat.hcpkg"
+file = "dna/holo-chat.dna.json"
 hash = "Qm328wyq38924y"
 
 [[instances]]
@@ -58,7 +58,7 @@ hash = "Qm000"
 [[ui_interfaces]]
 id = "ui-interface"
 bundle = "main"
-port = 3000
+port = 4200
 dna_interface = "websocket_interface"
 
 # -----------  Networking  -----------
