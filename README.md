@@ -7,6 +7,9 @@
 ## Possible Setup
 This repo is to try out some ways to make onboarding devs smoother.
 
+## Dependency
+At this point there is a dependency on libzmq please check Step 4 [here](https://developer.holochain.org/start.html) for your OS.
+
 
 ## Contribute
 Holochain is an open source project.  We welcome all sorts of participation and are actively working on increasing surface area to accept it.  Please see our [contributing guidelines](../CONTRIBUTING.md) for our general practices and protocols on participating in the community.
