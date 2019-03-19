@@ -6,3 +6,4 @@ dist
 dna
 tmp-storage
 ui
+Cargo.lock

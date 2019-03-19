@@ -1,17 +1,12 @@
 # Holochain Developer Setup
 
-[![Project](https://img.shields.io/badge/project-holochain-blue.svg?style=flat-square)](http://holochain.org/)
-[![PM](https://img.shields.io/badge/pm-waffle-blue.svg?style=flat-square)](https://waffle.io/holochain/org)
 [![Chat](https://img.shields.io/badge/chat-chat%2eholochain%2enet-blue.svg?style=flat-square)](https://chat.holochain.net)
 
 ## Possible Setup
-This repo is to try out some ways to make onboarding devs smoother.
-
-## Dependency
-At this point there is a dependency on libzmq please check Step 4 [here](https://developer.holochain.org/start.html) for your OS.
+This repo is to try out some ways to make onboarding devs simpler and more enoyable.
 
 ## Test it out - holochain-rust-todo
-To try this dev experience make sure you have node, Rust and libzmq installed.
+To try this dev experience make sure you have node and Rust installed.
 Set your rust to use "nightly-2019-01-24" like this ```rustup default nightly-2019-01-24```
 
 - In the holochain-rust-todo test folder run ```npm install```
@@ -62,22 +57,25 @@ Now let's build and start the holochain-basic-chat and use a browser to chat wit
 - Build the UI ```npm run build```
 - Next go back up one folder ```cd ..```
 - Start Holochain conductor with the conductor-config.toml ```npm run hc:start-mac```
+
   - You will see
-  ``` Using config path: ./conductor-config.toml
-      Reading DNA from dna/holo-chat.dna.json
-      adding ui interface ui-interface
-      Successfully loaded 1 instance configurations
-      Starting all of them...
-      Starting instance "holo-chat"...
-      Starting interfaces...
-      2019-02-22 13:05:13:holo-chat: debug/conductor:  instantiated
-      Done.
-      Starting UI servers
-      Starting all servers
-      About to serve path "./ui" at http://127.0.0.1:4200
-      Server started for "ui-interface"
-      Listening on http://127.0.0.1:4200
-    ```
+
+  ```
+    Using config path: ./conductor-config.toml
+    Reading DNA from dna/holo-chat.dna.json
+    adding ui interface ui-interface
+    Successfully loaded 1 instance configurations
+    Starting all of them...
+    Starting instance "holo-chat"...
+    Starting interfaces...
+    2019-02-22 13:05:13:holo-chat: debug/conductor:  instantiated
+    Done.
+    Starting UI servers
+    Starting all servers
+    About to serve path "./ui" at http://127.0.0.1:4200
+    Server started for "ui-interface"
+    Listening on http://127.0.0.1:4200
+  ```
 
 - Open a browser to ```http://localhost:4200```
 - Create yourself a handle and paste in a URL to a shot of your smiling face! You're now running our bsic chat hApp on Holochain!!

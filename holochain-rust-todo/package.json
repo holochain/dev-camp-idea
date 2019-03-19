@@ -9,7 +9,8 @@
   "scripts": {
     "hc:test-mac": "../mac/hc test",
     "hc:test-linux": "../linux/hc test",
-    "hc:test-win": "../win/hc test"
+    "hc:test-win-gnu": "../win-gnu/hc test",
+    "hc:test-win-msvc": "../win-msvc/hc test"
   },
   "repository": {
     "type": "git",
